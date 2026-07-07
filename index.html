@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 <!-- ADD META TAG REQUIRED TO MAKE PAGE RESPONSIVE-->
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <meta name="description" content="Vaanguard- Leading the Future of Success. Premier strategic investment and business acceleration firm for high-growth enterprises.">
+    <meta name="description" content="Vanguard- Leading the Future of Success. Premier strategic investment and business acceleration firm for high-growth enterprises.">
     <meta name="keywords" content="business growth, strategic investment, mergers, corporate consulting, digital transformation">
 <!-- ADD META TAG FOR AUTHOR AND YOUR NAME-->
     <title>Vanguard | Leading the Future of Success</title>
@@ -15,19 +15,20 @@
 
 <body>
 <!-- WRAP CONTENT IN VALIDATED, SEMANTIC HTML5 (SEE HINTS FOLDER LINKED TO IN THE CANVAS INSTRUCTIONS)-->
-<header>
-    <h1>Vanguard</h1>
-    <nav>
-        <h2>Main Navigation</h2>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle"><span></span></label>
-            <ul>
-                <li><a href="#">About</a></li> 
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-    </nav>
-</header>
+    <header>
+        <h1>Vanguard</h1>
+        <nav>
+            <h2>Main Navigation</h2>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle"><span></span></label>
+                <ul>
+                    <li><a href="#">About</a></li> 
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
         <h2>Innovation & Investment</h2>
         <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and financial solutions that drive success.</p>
         <p><a href="#">Request a Consultation</a></p>
@@ -102,25 +103,49 @@
                         <div class="bar" data-year="2024" style="--height: 100%;"></div>
                     </div>
 
-        <h2>Contact Us</h2>
-            <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
-            <form>
-                Full Name
+        <section id="contact">
+            <div class="container">                
+                <h2>Contact Us</h2>
+                <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name">
+                        </div>
 
-                Email Address
+                        <div class="form-group">
+                            <label for ="email">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
 
-                Company Name
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
 
-                Industry
+                        <div class="form-group">
+                            <label for="industry">Industry</label>
+                            <input type="text" id="industry" name="industry">
+                        </div>
 
-                How can we help you?
+                        <div class="form-group">
+                            <label for="help">How can we help you?</label>
+                            <textarea id="help" name="help"></textarea>
+                        </div>
 
-                Submit
-            </form>
+                        <div class="form-group">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+            </div>
+        </section>
+    </main>
     <footer>
-        <p>For educational purposes only.</p>
-        <p>Email: info@vaanguard.com</p>
-        <p>Phone: 480.123.4567</p>
+        <div class="container">
+            <p>For educational purposes only.</p>
+            <p>Email: <a href="mailto.info@vanguard.com">info@vanguard.com</a></p>
+            <p>Phone: 480.123.4567</p>
+        </div>
     </footer>
 </body>
 </html>
