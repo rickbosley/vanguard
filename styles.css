@@ -1,13 +1,11 @@
-/* CSS BY YOUR NAME */
+/* CSS BY Rick Bosley */
 
 /* IMPORTED FONTS*/
 /* IMPORT "INTER" FROM GOOGLE FONTS"
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* CSS RESET */
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
+/* Eric Meyer's Reset CSS v2.0 */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,7 +16,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, 
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -29,7 +27,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -66,6 +64,14 @@ table {
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
     width: 90%;
@@ -74,7 +80,7 @@ table {
 }
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- {
+#innovation {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
@@ -85,15 +91,15 @@ table {
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
-    content: "";
+.logo {
+    content: "Vanguard";
 
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
-
 }
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
@@ -113,7 +119,7 @@ table {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height 1.5s;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
