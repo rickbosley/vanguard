@@ -16,11 +16,12 @@
 <body>
 <!-- WRAP CONTENT IN VALIDATED, SEMANTIC HTML5 (SEE HINTS FOLDER LINKED TO IN THE CANVAS INSTRUCTIONS)-->
     <header>
+        <div class="logo"></div>
         <h1>Vanguard</h1>
+
+<!-- NAV MENU -->
         <nav>
             <h2>Main Navigation</h2>
-                <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle"><span></span></label>
                 <ul>
                     <li><a href="#about">About</a></li> 
                     <li><a href="#services">Services</a></li>
@@ -28,11 +29,11 @@
                 </ul>
         </nav>
     </header>
-    <main>
 
+    <main>
 <!-- INNOVATION / EXPERTISE, LINK FROM NAV -->
         <section id="about">
-            <div>
+            <div class="inn-blur">
                 <h2>Innovation & Investment</h2>
                 <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and financial solutions that drive success.</p>
                 <p><a href="#">Request a Consultation</a></p>
@@ -88,7 +89,7 @@
         <section id="results">
             <h2>Proven Results</h2>
             <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
-
+            <div class="results-container">
                 <h3>Profits</h3>
                     <table>
                         <thead>
@@ -136,6 +137,7 @@
                             <div class="bar" data-year="2023" style="--height: 85%;"></div>
                             <div class="bar" data-year="2024" style="--height: 100%;"></div>
                         </div>
+            </div>
         </section>
 
 <!-- CONTACT SECTION PLUS FORM, LINK FROM NAV -->
