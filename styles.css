@@ -158,17 +158,10 @@ h2 {
     gap: 12px;
 }
 
-.service-card {
-    display:flex;
-    flex-direction: column;
-    align-items: stretch;
-    height: 100%
-}
-.results-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 12px;
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 
 .service-card h3 {
@@ -205,6 +198,12 @@ h2 {
     margin-bottom:-0.5em;
 }
 
+.results-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+}
 
 table {
     border: 2px solid var(--charcoal);
@@ -238,26 +237,35 @@ table tbody tr:nth-of-type(even) {
     padding:2em 0 2em 0;
 }
 
-
 #contact p {
     margin-bottom: 1em;
 }
 
-.row {
-    display:flex;
+form {
+    display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    gap: 1.5rem;
+}
+
+.row {
+    display: flex;
+    gap: 2rem;
+}
+
+.form-group {
+    flex: 1;
 }
 
 label {
-    font-size: 16px;
+    display: block;
+    margin-bottom: .5rem;
 }
 
 input[type=text], input[type=email], select, textarea {
-   width: auto;
+   width: 100%;
    padding: 14px;
    border: 2.5px solid var(--blue);
-   margin-bottom:15px;
+   margin-bottom:10px;
 }
 
 textarea {
@@ -265,7 +273,7 @@ textarea {
 }
 
 input[type=submit] {
-   width: auto;
+   width: 100%;
    background-color: var(--blue);
    color: var(--white);
    padding: 15px;
@@ -314,9 +322,8 @@ a {
     margin: 0 auto;
 }
 
-.inn-blur{
+.inn-blur {
     backdrop-filter: blur(15px); 
-
     padding:10px;
 }
 
@@ -329,7 +336,6 @@ a {
     text-align: center;
     padding: 1rem;
     overflow: hidden;
-
     color:var(--white);
     grid-template-rows: 0.01fr 0.01fr 0.01fr;
     align-content: center;
@@ -338,13 +344,11 @@ a {
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
 .logo {
     content: "";
-
     left:-.5rem;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
 }
-
 
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
@@ -359,6 +363,7 @@ a {
     padding: 1rem;
     position: relative;
 }
+
 /* ADD ON TRANSITION ON HEIGHT */
 .bar {
     width: 50px;
@@ -368,6 +373,7 @@ a {
     transition: height 0.5s ease;
     height: 0;
 }
+
 /* THIS ONE IS DONE FOR YOU */
 .bar::after {
     content: attr(data-year);
@@ -387,11 +393,11 @@ a {
         height: var(--height);
     }
 }
+
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
 .bar {
     animation: stepUp 1s ease-in-out forwards;
 }
-
 
 /* MEDIA QUERIES (MEDIUM) */ 
 
