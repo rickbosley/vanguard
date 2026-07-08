@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 <!-- ADD META TAG REQUIRED TO MAKE PAGE RESPONSIVE-->
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Vanguard- Leading the Future of Success. Premier strategic investment and business acceleration firm for high-growth enterprises.">
     <meta name="keywords" content="business growth, strategic investment, mergers, corporate consulting, digital transformation">
 <!-- ADD META TAG FOR AUTHOR AND YOUR NAME-->
@@ -22,127 +22,171 @@
                 <input type="checkbox" id="menu-toggle">
                 <label for="menu-toggle"><span></span></label>
                 <ul>
-                    <li><a href="#">About</a></li> 
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li> 
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
         </nav>
     </header>
     <main>
-        <h2>Innovation & Investment</h2>
-        <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and financial solutions that drive success.</p>
-        <p><a href="#">Request a Consultation</a></p>
 
-        <h2>Our Expertise. Your Edge.</h2>
-        <p>We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to propel businesses forward. 
-            Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers results.</p>
+<!-- INNOVATION / EXPERTISE, LINK FROM NAV -->
+        <section id="about">
+            <div>
+                <h2>Innovation & Investment</h2>
+                <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and financial solutions that drive success.</p>
+                <p><a href="#">Request a Consultation</a></p>
+            </div>
+        </section>
 
-        <h2>What We Offer</h2>
-            <h3>Strategic Growth Consulting</h3>
-            <p>Unlock new revenue streams and optimize market expansion strategies.</p>
+        <section id="edge">
+            <div>
+                <h2>Our Expertise. Your Edge.</h2>
+                <p>We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to propel businesses forward. 
+                    Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers results.</p>
+            </div>
+        </section>
 
-            <h3>High-Impact Investment Solutions</h3>
-            <p>Maximize returns with data-driven portfolio management.</p>
+<!-- SERVICES SECTION, LINK FROM NAV -->
+        <section id="services">
+            <h2>What We Offer</h2>
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Strategic Growth Consulting</h3>
+                    <p>Unlock new revenue streams and optimize market expansion strategies.</p>
+                </article>
 
-            <h3>Business Acceleration & Mergers</h3>
-            <p>Identify opportunities for rapid growth and high-value acquisitions.</p>
+                <article class="service-card">
+                    <h3>High-Impact Investment Solutions</h3>
+                    <p>Maximize returns with data-driven portfolio management.</p>
+                </article>
 
-            <h3>Digital Transformation</h3>
-            <p>Stay at the forefront of industry advancements with AI, blockchain, and automation.</p>
+                <article class="service-card">
+                    <h3>Business Acceleration & Mergers</h3>
+                    <p>Identify opportunities for rapid growth and high-value acquisitions.</p>
+                </article>
 
-            <h3>Exclusive Executive Advisory Services</h3>
-            <p>Personalized insights and leadership support for C-suite executives and high-net-worth investors.</p>
+                <article class="service-card">
+                    <h3>Digital Transformation</h3>
+                    <p>Stay at the forefront of industry advancements with AI, blockchain, and automation.</p>
+                </article>
 
-            <h3>Corporate Innovation</h3>
-            <p>Strategic implementation of new ideas, technologies, and processes to drive business growth, 
-                enhance competitive advantage, and adapt to evolving market demands.</p>
+                <article class="service-card">
+                    <h3>Exclusive Executive Advisory Services</h3>
+                    <p>Personalized insights and leadership support for C-suite executives and high-net-worth investors.</p>
+                </article>
 
-        <h2>Proven Results</h2>
-        <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
+                <article class="service-card">
+                    <h3>Corporate Innovation</h3>
+                    <p>Strategic implementation of new ideas, technologies, and processes to drive business growth, 
+                        enhance competitive advantage, and adapt to evolving market demands.</p>
+                </article>
+            </div>
+        </section>
 
-            <h3>Profits</h3>
-                <table>
-                    <tr>
-                        <th>Year</th>
-                        <th>Revenue ($M)</th>
-                        <th>Growth (%)</th>
-                    </tr>
-                    <tr>
-                        <td>2020</td>
-                        <td>$120M</td>
-                        <td>30%</td>
-                    </tr>
-                    <tr>
-                        <td>2021</td>
-                        <td>$180M</td>
-                        <td>50%</td>
-                    </tr>
-                    <tr>
-                        <td>2022</td>
-                        <td>$250M</td>
-                        <td>70%</td>
-                    </tr>
-                    <tr>
-                        <td>2023</td>
-                        <td>$340M</td>
-                        <td>85%</td>
-                    </tr>
-                    <tr>
-                        <td>2024</td>
-                        <td>$420M</td>
-                        <td>100%</td>
-                    </tr>
-                </table>
-            <h3>Growth</h3>
+<!-- RESULTS SECTION WITH PROFITS CHART AND BAR GRAPH -->
+        <section id="results">
+            <h2>Proven Results</h2>
+            <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
+
+                <h3>Profits</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Revenue ($M)</th>
+                                <th>Growth (%)</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>2020</td>
+                                <td>$120M</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td>2021</td>
+                                <td>$180M</td>
+                                <td>50%</td>
+                            </tr>
+                            <tr>
+                                <td>2022</td>
+                                <td>$250M</td>
+                                <td>70%</td>
+                            </tr>
+                            <tr>
+                                <td>2023</td>
+                                <td>$340M</td>
+                                <td>85%</td>
+                            </tr>
+                            <tr>
+                                <td>2024</td>
+                                <td>$420M</td>
+                                <td>100%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <h3>Growth</h3>
 <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
-                    <div  id="bar-chart">
-                        <div class="bar" data-year="2020" style="--height: 30%;"></div>
-                        <div class="bar" data-year="2021" style="--height: 50%;"></div>
-                        <div class="bar" data-year="2022" style="--height: 70%;"></div>
-                        <div class="bar" data-year="2023" style="--height: 85%;"></div>
-                        <div class="bar" data-year="2024" style="--height: 100%;"></div>
-                    </div>
+                        <div  id="bar-chart">
+                            <div class="bar" data-year="2020" style="--height: 30%;"></div>
+                            <div class="bar" data-year="2021" style="--height: 50%;"></div>
+                            <div class="bar" data-year="2022" style="--height: 70%;"></div>
+                            <div class="bar" data-year="2023" style="--height: 85%;"></div>
+                            <div class="bar" data-year="2024" style="--height: 100%;"></div>
+                        </div>
+        </section>
 
+<!-- CONTACT SECTION PLUS FORM, LINK FROM NAV -->
         <section id="contact">
             <div class="container">                
                 <h2>Contact Us</h2>
                 <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
                     <form>
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name">
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email">
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for ="email">Email Address</label>
-                            <input type="email" id="email" name="email">
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="industry">Industry</label>
+                                <input type="text" id="industry" name="industry">
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="company">Company Name</label>
-                            <input type="text" id="company" name="company">
-                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="help">How can we help you?</label>
+                                <textarea id="help" name="help"></textarea>
+                            </div>
 
-                        <div class="form-group">
-                            <label for="industry">Industry</label>
-                            <input type="text" id="industry" name="industry">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="help">How can we help you?</label>
-                            <textarea id="help" name="help"></textarea>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="submit" value="Submit">
+                            <div class="form-group">
+                                <input type="submit" value="Submit">
+                            </div>
                         </div>
                     </form>
             </div>
         </section>
     </main>
+
+<!-- FOOTER WITH CONTACT DATA -->
     <footer>
         <div class="container">
-            <p>For educational purposes only.</p>
+            <p>&copy;2025 Vanguard. All rights reserved.</p>
             <p>Email: <a href="mailto.info@vanguard.com">info@vanguard.com</a></p>
             <p>Phone: 480.123.4567</p>
         </div>
