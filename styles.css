@@ -303,6 +303,10 @@ table tbody tr:nth-of-type(even) {
     padding:2em 0 2em 0;
 }
 
+#contact input[type="text"], #contact input[type="email"], #contact textarea {
+        font-size: 10pt;
+}
+
 #contact p {
     margin-bottom: 1em;
 }
